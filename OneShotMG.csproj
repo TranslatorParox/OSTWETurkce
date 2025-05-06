@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>OneShotMG</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net461</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>7.3</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="OneShotMG.Icon.ico" />
+    <None Remove="OneShotMG.Icon.bmp" />
+    <EmbeddedResource Include="OneShotMG.Icon.ico" LogicalName="OneShotMG.Icon.ico" />
+    <EmbeddedResource Include="OneShotMG.Icon.bmp" LogicalName="OneShotMG.Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Xml" />
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\common\OneShot World Machine Edition\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="INIFileParser">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\common\OneShot World Machine Edition\INIFileParser.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\common\OneShot World Machine Edition\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\common\OneShot World Machine Edition\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Steamworks.NET">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\common\OneShot World Machine Edition\Steamworks.NET.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
